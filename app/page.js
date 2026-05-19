@@ -3,169 +3,232 @@ export default function Home() {
   const services = [
     {
       title: "YouTube Monetization",
-      image:
-        "https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1200&auto=format&fit=crop",
-      details: [
-        "50K Active Users Subscribers",
-        "5K Hour WatchTime",
-        "500K Views (Real Users)",
-        "50K Likes",
-        "5K Comments",
-        "5K Shares",
-        "500 Dollar Earning Included",
-      ],
       price: "₹4999",
+      desc: "50K Subscribers • 5K WatchTime • 500K Views",
     },
-
     {
       title: "Google Reviews",
-      image:
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
-      details: [
-        "₹499 - 100 Reviews",
-        "₹799 - 500 Reviews",
-        "₹1000 - 800 Reviews",
-        "₹1499 - 1200 Reviews",
-        "₹1999 - 1750 Reviews",
-      ],
+      price: "Starting ₹499",
+      desc: "100 to 1750 Reviews Packages Available",
     },
-
     {
-      title: "YouTube Thumbnail Design",
-      image:
-        "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop",
-      details: [
-        "Professional Thumbnail Design",
-        "High CTR Design",
-        "HD Quality",
-      ],
-      price: "₹499 Per Thumbnail",
+      title: "Thumbnail Design",
+      price: "₹499",
+      desc: "Professional High CTR Thumbnail Design",
     },
-
     {
-      title: "YouTube Channel Banner",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
-      details: [
-        "Professional HD Banner",
-        "Premium Quality",
-        "Modern Design",
-      ],
+      title: "Channel Banner",
       price: "₹999",
+      desc: "Premium HD YouTube Banner Design",
     },
-
-    {
-      title: "Songs Promotion",
-      image:
-        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1200&auto=format&fit=crop",
-      details: [
-        "Affordable Packages",
-        "Real Audience Reach",
-        "Music Promotion Service",
-      ],
-    },
-
     {
       title: "Instagram Growth",
-      image:
-        "https://images.unsplash.com/photo-1611262588024-d12430b98920?q=80&w=1200&auto=format&fit=crop",
-      details: [
-        "Followers Growth",
-        "Real Reach",
-        "Engagement Increase",
-      ],
+      price: "Affordable",
+      desc: "Real Audience & Engagement Growth",
     },
-
     {
-      title: "Facebook Monetization",
-      image:
-        "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=1200&auto=format&fit=crop",
-      details: [
-        "Facebook Page Monetization",
-        "Audience Growth",
-        "Professional Support",
-      ],
-    },
-
-    {
-      title: "Video Editing",
-      image:
-        "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=1200&auto=format&fit=crop",
-      details: [
-        "Professional Editing",
-        "HD Export",
-        "Reels & YouTube Videos",
-      ],
+      title: "Songs Promotion",
+      price: "Affordable",
+      desc: "Music Promotion With Real Reach",
     },
   ];
 
   return (
     <div
       style={{
+        background: "#060606",
+        color: "#fff",
         margin: 0,
         padding: 0,
-        background: "#050505",
-        color: "#fff",
         fontFamily: "Arial",
       }}
     >
 
-      {/* HERO */}
+      {/* NAVBAR */}
 
-      <section
+      <nav
         style={{
-          minHeight: "100vh",
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "space-between",
           alignItems: "center",
-          flexDirection: "column",
-          textAlign: "center",
-          padding: "20px",
-          background:
-            "linear-gradient(to bottom,#03110d,#000000)",
+          padding: "18px 20px",
+          borderBottom: "1px solid #151515",
+          position: "sticky",
+          top: 0,
+          background: "#060606",
+          zIndex: 999,
         }}
       >
 
-        <h1
+        <h2
           style={{
-            fontSize: "clamp(45px,8vw,90px)",
             color: "#00ff9d",
-            textShadow: "0 0 30px #00ff9d",
-            marginBottom: "20px",
+            margin: 0,
+            fontSize: "28px",
           }}
         >
-          THE SOCIAL EXPERT
-        </h1>
-
-        <p
-          style={{
-            maxWidth: "800px",
-            color: "#cfcfcf",
-            lineHeight: "35px",
-            fontSize: "clamp(18px,3vw,24px)",
-          }}
-        >
-          Professional YouTube Monetization, Google Reviews,
-          Instagram Growth, Songs Promotion & Digital Marketing Services.
-        </p>
+          TheSocialExpert
+        </h2>
 
         <a
           href="https://wa.me/918962007547"
           target="_blank"
           style={{
-            marginTop: "40px",
             background: "#00ff9d",
             color: "#000",
-            padding: "16px 40px",
-            borderRadius: "12px",
             textDecoration: "none",
+            padding: "10px 18px",
+            borderRadius: "10px",
             fontWeight: "bold",
-            fontSize: "20px",
-            boxShadow: "0 0 25px #00ff9d",
+            fontSize: "15px",
           }}
         >
-          Contact On WhatsApp
+          WhatsApp
         </a>
+
+      </nav>
+
+      {/* HERO */}
+
+      <section
+        style={{
+          padding: "70px 20px 60px",
+          textAlign: "center",
+          background:
+            "linear-gradient(to bottom,#071a13,#060606)",
+        }}
+      >
+
+        <h1
+          style={{
+            fontSize: "clamp(42px,8vw,75px)",
+            marginBottom: "20px",
+            color: "#00ff9d",
+            lineHeight: "1.1",
+          }}
+        >
+          Grow Your Social Presence
+        </h1>
+
+        <p
+          style={{
+            maxWidth: "750px",
+            margin: "auto",
+            color: "#bdbdbd",
+            lineHeight: "32px",
+            fontSize: "19px",
+          }}
+        >
+          Professional YouTube Monetization, Instagram Growth,
+          Google Reviews & Digital Marketing Services.
+        </p>
+
+        <div
+          style={{
+            display: "flex",
+            gap: "15px",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            marginTop: "35px",
+          }}
+        >
+
+          <a
+            href="https://wa.me/918962007547"
+            target="_blank"
+            style={{
+              background: "#00ff9d",
+              color: "#000",
+              textDecoration: "none",
+              padding: "15px 28px",
+              borderRadius: "12px",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+            Get Started
+          </a>
+
+          <a
+            href="mailto:thesocialexpert2.1@gmail.com"
+            style={{
+              border: "1px solid #00ff9d",
+              color: "#00ff9d",
+              textDecoration: "none",
+              padding: "15px 28px",
+              borderRadius: "12px",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+            Email Us
+          </a>
+
+        </div>
+
+      </section>
+
+      {/* STATS */}
+
+      <section
+        style={{
+          padding: "20px",
+        }}
+      >
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(150px,1fr))",
+            gap: "15px",
+            maxWidth: "1100px",
+            margin: "auto",
+          }}
+        >
+
+          {[
+            ["50K+", "Subscribers"],
+            ["500K+", "Views"],
+            ["1000+", "Clients"],
+            ["24/7", "Support"],
+          ].map((item, index) => (
+
+            <div
+              key={index}
+              style={{
+                background: "#0d0d0d",
+                border: "1px solid #171717",
+                padding: "25px",
+                borderRadius: "18px",
+                textAlign: "center",
+              }}
+            >
+
+              <h2
+                style={{
+                  color: "#00ff9d",
+                  marginBottom: "10px",
+                  fontSize: "35px",
+                }}
+              >
+                {item[0]}
+              </h2>
+
+              <p
+                style={{
+                  color: "#bdbdbd",
+                  margin: 0,
+                }}
+              >
+                {item[1]}
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
 
       </section>
 
@@ -173,16 +236,16 @@ export default function Home() {
 
       <section
         style={{
-          padding: "100px 20px",
+          padding: "70px 20px",
         }}
       >
 
         <h2
           style={{
             textAlign: "center",
+            fontSize: "45px",
+            marginBottom: "50px",
             color: "#00ff9d",
-            fontSize: "clamp(35px,6vw,60px)",
-            marginBottom: "70px",
           }}
         >
           Our Services
@@ -192,9 +255,9 @@ export default function Home() {
           style={{
             display: "grid",
             gridTemplateColumns:
-              "repeat(auto-fit,minmax(320px,1fr))",
-            gap: "30px",
-            maxWidth: "1400px",
+              "repeat(auto-fit,minmax(280px,1fr))",
+            gap: "20px",
+            maxWidth: "1200px",
             margin: "auto",
           }}
         >
@@ -205,84 +268,129 @@ export default function Home() {
               key={index}
               style={{
                 background: "#0d0d0d",
-                borderRadius: "22px",
-                overflow: "hidden",
-                border: "1px solid #1f1f1f",
-                boxShadow:
-                  "0 0 20px rgba(0,255,157,0.15)",
+                borderRadius: "18px",
+                padding: "28px",
+                border: "1px solid #181818",
               }}
             >
 
-              <img
-                src={service.image}
-                alt={service.title}
+              <h3
                 style={{
-                  width: "100%",
-                  height: "220px",
-                  objectFit: "cover",
-                }}
-              />
-
-              <div
-                style={{
-                  padding: "25px",
+                  color: "#00ff9d",
+                  fontSize: "28px",
+                  marginBottom: "15px",
                 }}
               >
+                {service.title}
+              </h3>
 
-                <h3
-                  style={{
-                    color: "#00ff9d",
-                    fontSize: "28px",
-                    marginBottom: "20px",
-                  }}
-                >
-                  {service.title}
-                </h3>
+              <p
+                style={{
+                  color: "#c9c9c9",
+                  lineHeight: "30px",
+                  minHeight: "70px",
+                }}
+              >
+                {service.desc}
+              </p>
 
-                <div
-                  style={{
-                    color: "#d0d0d0",
-                    lineHeight: "32px",
-                    marginBottom: "25px",
-                  }}
-                >
-                  {service.details.map((detail, i) => (
-                    <p key={i}>• {detail}</p>
-                  ))}
-                </div>
+              <h2
+                style={{
+                  marginTop: "20px",
+                  marginBottom: "25px",
+                  fontSize: "32px",
+                }}
+              >
+                {service.price}
+              </h2>
 
-                {service.price && (
-                  <h2
-                    style={{
-                      color: "#fff",
-                      marginBottom: "25px",
-                      fontSize: "35px",
-                    }}
-                  >
-                    {service.price}
-                  </h2>
-                )}
+              <a
+                href="https://wa.me/918962007547"
+                target="_blank"
+                style={{
+                  display: "inline-block",
+                  background: "#00ff9d",
+                  color: "#000",
+                  textDecoration: "none",
+                  padding: "13px 24px",
+                  borderRadius: "10px",
+                  fontWeight: "bold",
+                }}
+              >
+                Order Now
+              </a>
 
-                <a
-                  href="https://wa.me/918962007547"
-                  target="_blank"
-                  style={{
-                    display: "inline-block",
-                    background: "#00ff9d",
-                    color: "#000",
-                    padding: "14px 30px",
-                    borderRadius: "12px",
-                    textDecoration: "none",
-                    fontWeight: "bold",
-                    fontSize: "18px",
-                    boxShadow:
-                      "0 0 20px rgba(0,255,157,0.5)",
-                  }}
-                >
-                  Order On WhatsApp
-                </a>
+            </div>
 
-              </div>
+          ))}
+
+        </div>
+
+      </section>
+
+      {/* TESTIMONIALS */}
+
+      <section
+        style={{
+          padding: "70px 20px",
+          background: "#08110d",
+        }}
+      >
+
+        <h2
+          style={{
+            textAlign: "center",
+            fontSize: "45px",
+            marginBottom: "50px",
+            color: "#00ff9d",
+          }}
+        >
+          Testimonials
+        </h2>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(280px,1fr))",
+            gap: "20px",
+            maxWidth: "1200px",
+            margin: "auto",
+          }}
+        >
+
+          {[
+            "Amazing service with real growth.",
+            "Professional support & fast delivery.",
+            "Best monetization service online.",
+          ].map((review, index) => (
+
+            <div
+              key={index}
+              style={{
+                background: "#0d0d0d",
+                padding: "28px",
+                borderRadius: "18px",
+                border: "1px solid #181818",
+              }}
+            >
+
+              <h3
+                style={{
+                  color: "#00ff9d",
+                }}
+              >
+                Client Review
+              </h3>
+
+              <p
+                style={{
+                  color: "#cfcfcf",
+                  lineHeight: "30px",
+                }}
+              >
+                "{review}"
+              </p>
 
             </div>
 
@@ -296,21 +404,9 @@ export default function Home() {
 
       <section
         style={{
-          padding: "90px 20px",
-          background: "#08110d",
+          padding: "70px 20px",
         }}
       >
-
-        <h2
-          style={{
-            textAlign: "center",
-            color: "#00ff9d",
-            fontSize: "clamp(35px,6vw,60px)",
-            marginBottom: "50px",
-          }}
-        >
-          Refund Policy
-        </h2>
 
         <div
           style={{
@@ -319,41 +415,47 @@ export default function Home() {
             background: "#0d0d0d",
             padding: "40px",
             borderRadius: "20px",
-            border: "1px solid #1f1f1f",
-            color: "#d0d0d0",
-            lineHeight: "35px",
+            border: "1px solid #181818",
           }}
         >
 
-          <p>
+          <h2
+            style={{
+              color: "#00ff9d",
+              marginBottom: "25px",
+              textAlign: "center",
+              fontSize: "42px",
+            }}
+          >
+            Refund Policy
+          </h2>
+
+          <p
+            style={{
+              color: "#cfcfcf",
+              lineHeight: "35px",
+              fontSize: "18px",
+            }}
+          >
             • Refund requests are reviewed carefully.
-          </p>
-
-          <p>
+            <br /><br />
             • 7-10 working days it will take to refund your amount.
-          </p>
-
-          <p>
+            <br /><br />
             • Fake claims or misuse may lead to rejection.
-          </p>
-
-          <p>
+            <br /><br />
             • By purchasing our services you agree to our terms.
-          </p>
-
-          <p>
-            © Copyright TheSocialExpert
           </p>
 
         </div>
 
       </section>
 
-      {/* CONTACT */}
+      {/* FOOTER */}
 
-      <section
+      <footer
         style={{
-          padding: "100px 20px",
+          padding: "35px 20px",
+          borderTop: "1px solid #151515",
           textAlign: "center",
         }}
       >
@@ -361,69 +463,48 @@ export default function Home() {
         <h2
           style={{
             color: "#00ff9d",
-            fontSize: "clamp(40px,6vw,65px)",
-            marginBottom: "20px",
+            marginBottom: "15px",
           }}
         >
-          Contact Us
+          TheSocialExpert
         </h2>
 
         <p
           style={{
-            color: "#cfcfcf",
-            fontSize: "20px",
-            marginBottom: "50px",
+            color: "#bdbdbd",
+            marginBottom: "20px",
           }}
         >
-          Connect with The Social Expert
+          thesocialexpert2.1@gmail.com
         </p>
 
-        <div
+        <a
+          href="https://wa.me/918962007547"
+          target="_blank"
           style={{
-            display: "flex",
-            gap: "25px",
-            justifyContent: "center",
-            flexWrap: "wrap",
+            background: "#00ff9d",
+            color: "#000",
+            padding: "12px 24px",
+            borderRadius: "10px",
+            textDecoration: "none",
+            fontWeight: "bold",
           }}
         >
+          Contact On WhatsApp
+        </a>
 
-          <a
-            href="https://wa.me/918962007547"
-            target="_blank"
-            style={{
-              background: "#00ff9d",
-              color: "#000",
-              padding: "18px 40px",
-              borderRadius: "15px",
-              textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "22px",
-              boxShadow:
-                "0 0 25px rgba(0,255,157,0.5)",
-            }}
-          >
-            WhatsApp Us
-          </a>
+        <p
+          style={{
+            color: "#777",
+            marginTop: "30px",
+            fontSize: "14px",
+          }}
+        >
+          © 2026 TheSocialExpert. All Rights Reserved.
+        </p>
 
-          <a
-            href="mailto:thesocialexpert2.1@gmail.com"
-            style={{
-              border: "2px solid #00ff9d",
-              color: "#00ff9d",
-              padding: "18px 40px",
-              borderRadius: "15px",
-              textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "22px",
-            }}
-          >
-            Email Us
-          </a>
-
-        </div>
-
-      </section>
+      </footer>
 
     </div>
   );
-            }
+}
