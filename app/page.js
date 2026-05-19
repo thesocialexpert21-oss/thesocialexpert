@@ -1,510 +1,121 @@
 export default function Home() {
 
   const services = [
-    {
-      title: "YouTube Monetization",
-      price: "₹4999",
-      desc: "50K Subscribers • 5K WatchTime • 500K Views",
-    },
-    {
-      title: "Google Reviews",
-      price: "Starting ₹499",
-      desc: "100 to 1750 Reviews Packages Available",
-    },
-    {
-      title: "Thumbnail Design",
-      price: "₹499",
-      desc: "Professional High CTR Thumbnail Design",
-    },
-    {
-      title: "Channel Banner",
-      price: "₹999",
-      desc: "Premium HD YouTube Banner Design",
-    },
-    {
-      title: "Instagram Growth",
-      price: "Affordable",
-      desc: "Real Audience & Engagement Growth",
-    },
-    {
-      title: "Songs Promotion",
-      price: "Affordable",
-      desc: "Music Promotion With Real Reach",
-    },
+    { title: "YouTube Monetization", price: "₹4999", desc: "50K Subs • 5K WatchTime • 500K Views" },
+    { title: "Google Reviews", price: "₹499+", desc: "100 to 1750 High Quality Reviews" },
+    { title: "Thumbnail Design", price: "₹499", desc: "High CTR Professional Thumbnails" },
+    { title: "Instagram Growth", price: "₹999+", desc: "Real Organic Engagement Growth" },
+  ];
+
+  const plans = [
+    { name: "Starter", price: "₹499", features: ["Basic Support", "1 Service", "Fast Delivery"] },
+    { name: "Pro", price: "₹1999", features: ["Priority Support", "3 Services", "Better Reach"] },
+    { name: "Elite", price: "₹4999", features: ["24/7 Support", "All Services", "Max Growth"] },
   ];
 
   return (
-    <div
-      style={{
-        background: "#060606",
-        color: "#fff",
-        margin: 0,
-        padding: 0,
-        fontFamily: "Arial",
-      }}
-    >
+    <div className="min-h-screen bg-[#05070d] text-white font-sans">
 
-      {/* NAVBAR */}
-
-      <nav
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "18px 20px",
-          borderBottom: "1px solid #151515",
-          position: "sticky",
-          top: 0,
-          background: "#060606",
-          zIndex: 999,
-        }}
-      >
-
-        <h2
-          style={{
-            color: "#00ff9d",
-            margin: 0,
-            fontSize: "28px",
-          }}
-        >
-          TheSocialExpert
-        </h2>
-
+      {/* NAV */}
+      <nav className="flex justify-between items-center px-6 py-4 border-b border-white/10 backdrop-blur">
+        <h1 className="text-2xl font-bold text-blue-400">TheSocialExpert</h1>
         <a
           href="https://wa.me/918962007547"
-          target="_blank"
-          style={{
-            background: "#00ff9d",
-            color: "#000",
-            textDecoration: "none",
-            padding: "10px 18px",
-            borderRadius: "10px",
-            fontWeight: "bold",
-            fontSize: "15px",
-          }}
+          className="bg-blue-500 hover:bg-blue-600 px-5 py-2 rounded-xl font-semibold"
         >
           WhatsApp
         </a>
-
       </nav>
 
       {/* HERO */}
+      <section className="text-center px-6 py-24 bg-gradient-to-b from-blue-950/30 to-transparent">
 
-      <section
-        style={{
-          padding: "70px 20px 60px",
-          textAlign: "center",
-          background:
-            "linear-gradient(to bottom,#071a13,#060606)",
-        }}
-      >
-
-        <h1
-          style={{
-            fontSize: "clamp(42px,8vw,75px)",
-            marginBottom: "20px",
-            color: "#00ff9d",
-            lineHeight: "1.1",
-          }}
-        >
-          Grow Your Social Presence
+        <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          Grow Your <span className="text-blue-400">Social Media</span> Faster
         </h1>
 
-        <p
-          style={{
-            maxWidth: "750px",
-            margin: "auto",
-            color: "#bdbdbd",
-            lineHeight: "32px",
-            fontSize: "19px",
-          }}
-        >
-          Professional YouTube Monetization, Instagram Growth,
-          Google Reviews & Digital Marketing Services.
+        <p className="text-gray-400 mt-6 max-w-2xl mx-auto text-lg">
+          YouTube Monetization, Instagram Growth, Reviews & Digital Marketing — All in one place.
         </p>
 
-        <div
-          style={{
-            display: "flex",
-            gap: "15px",
-            justifyContent: "center",
-            flexWrap: "wrap",
-            marginTop: "35px",
-          }}
-        >
-
-          <a
-            href="https://wa.me/918962007547"
-            target="_blank"
-            style={{
-              background: "#00ff9d",
-              color: "#000",
-              textDecoration: "none",
-              padding: "15px 28px",
-              borderRadius: "12px",
-              fontWeight: "bold",
-              fontSize: "18px",
-            }}
-          >
+        <div className="mt-10 flex gap-4 justify-center flex-wrap">
+          <a className="bg-blue-500 px-6 py-3 rounded-xl font-semibold hover:scale-105 transition" href="https://wa.me/918962007547">
             Get Started
           </a>
-
-          <a
-            href="mailto:thesocialexpert2.1@gmail.com"
-            style={{
-              border: "1px solid #00ff9d",
-              color: "#00ff9d",
-              textDecoration: "none",
-              padding: "15px 28px",
-              borderRadius: "12px",
-              fontWeight: "bold",
-              fontSize: "18px",
-            }}
-          >
-            Email Us
+          <a className="border border-blue-400 px-6 py-3 rounded-xl text-blue-400">
+            View Services
           </a>
-
-        </div>
-
-      </section>
-
-      {/* STATS */}
-
-      <section
-        style={{
-          padding: "20px",
-        }}
-      >
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(150px,1fr))",
-            gap: "15px",
-            maxWidth: "1100px",
-            margin: "auto",
-          }}
-        >
-
-          {[
-            ["50K+", "Subscribers"],
-            ["500K+", "Views"],
-            ["1000+", "Clients"],
-            ["24/7", "Support"],
-          ].map((item, index) => (
-
-            <div
-              key={index}
-              style={{
-                background: "#0d0d0d",
-                border: "1px solid #171717",
-                padding: "25px",
-                borderRadius: "18px",
-                textAlign: "center",
-              }}
-            >
-
-              <h2
-                style={{
-                  color: "#00ff9d",
-                  marginBottom: "10px",
-                  fontSize: "35px",
-                }}
-              >
-                {item[0]}
-              </h2>
-
-              <p
-                style={{
-                  color: "#bdbdbd",
-                  margin: 0,
-                }}
-              >
-                {item[1]}
-              </p>
-
-            </div>
-
-          ))}
-
         </div>
 
       </section>
 
       {/* SERVICES */}
+      <section className="px-6 py-20">
 
-      <section
-        style={{
-          padding: "70px 20px",
-        }}
-      >
-
-        <h2
-          style={{
-            textAlign: "center",
-            fontSize: "45px",
-            marginBottom: "50px",
-            color: "#00ff9d",
-          }}
-        >
+        <h2 className="text-center text-4xl font-bold mb-12 text-blue-400">
           Our Services
         </h2>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(280px,1fr))",
-            gap: "20px",
-            maxWidth: "1200px",
-            margin: "auto",
-          }}
-        >
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-          {services.map((service, index) => (
+          {services.map((s, i) => (
+            <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur hover:scale-105 transition">
 
-            <div
-              key={index}
-              style={{
-                background: "#0d0d0d",
-                borderRadius: "18px",
-                padding: "28px",
-                border: "1px solid #181818",
-              }}
-            >
-
-              <h3
-                style={{
-                  color: "#00ff9d",
-                  fontSize: "28px",
-                  marginBottom: "15px",
-                }}
-              >
-                {service.title}
-              </h3>
-
-              <p
-                style={{
-                  color: "#c9c9c9",
-                  lineHeight: "30px",
-                  minHeight: "70px",
-                }}
-              >
-                {service.desc}
-              </p>
-
-              <h2
-                style={{
-                  marginTop: "20px",
-                  marginBottom: "25px",
-                  fontSize: "32px",
-                }}
-              >
-                {service.price}
-              </h2>
+              <h3 className="text-xl font-bold text-blue-300">{s.title}</h3>
+              <p className="text-gray-400 mt-3">{s.desc}</p>
+              <h4 className="text-2xl font-bold mt-5">{s.price}</h4>
 
               <a
                 href="https://wa.me/918962007547"
-                target="_blank"
-                style={{
-                  display: "inline-block",
-                  background: "#00ff9d",
-                  color: "#000",
-                  textDecoration: "none",
-                  padding: "13px 24px",
-                  borderRadius: "10px",
-                  fontWeight: "bold",
-                }}
+                className="inline-block mt-5 bg-blue-500 px-4 py-2 rounded-lg"
               >
                 Order Now
               </a>
 
             </div>
-
           ))}
 
         </div>
-
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* PRICING */}
+      <section className="px-6 py-20 bg-white/5">
 
-      <section
-        style={{
-          padding: "70px 20px",
-          background: "#08110d",
-        }}
-      >
-
-        <h2
-          style={{
-            textAlign: "center",
-            fontSize: "45px",
-            marginBottom: "50px",
-            color: "#00ff9d",
-          }}
-        >
-          Testimonials
+        <h2 className="text-center text-4xl font-bold mb-12 text-blue-400">
+          Pricing Plans
         </h2>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(280px,1fr))",
-            gap: "20px",
-            maxWidth: "1200px",
-            margin: "auto",
-          }}
-        >
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-          {[
-            "Amazing service with real growth.",
-            "Professional support & fast delivery.",
-            "Best monetization service online.",
-          ].map((review, index) => (
+          {plans.map((p, i) => (
+            <div key={i} className="p-6 rounded-2xl bg-black/30 border border-white/10">
 
-            <div
-              key={index}
-              style={{
-                background: "#0d0d0d",
-                padding: "28px",
-                borderRadius: "18px",
-                border: "1px solid #181818",
-              }}
-            >
+              <h3 className="text-xl font-bold text-blue-300">{p.name}</h3>
+              <h2 className="text-3xl font-bold mt-3">{p.price}</h2>
 
-              <h3
-                style={{
-                  color: "#00ff9d",
-                }}
+              <ul className="mt-4 text-gray-400 space-y-2">
+                {p.features.map((f, j) => <li key={j}>• {f}</li>)}
+              </ul>
+
+              <a
+                href="https://wa.me/918962007547"
+                className="block mt-6 bg-blue-500 text-center py-2 rounded-lg"
               >
-                Client Review
-              </h3>
-
-              <p
-                style={{
-                  color: "#cfcfcf",
-                  lineHeight: "30px",
-                }}
-              >
-                "{review}"
-              </p>
+                Choose Plan
+              </a>
 
             </div>
-
           ))}
-
-        </div>
-
-      </section>
-
-      {/* REFUND POLICY */}
-
-      <section
-        style={{
-          padding: "70px 20px",
-        }}
-      >
-
-        <div
-          style={{
-            maxWidth: "1000px",
-            margin: "auto",
-            background: "#0d0d0d",
-            padding: "40px",
-            borderRadius: "20px",
-            border: "1px solid #181818",
-          }}
-        >
-
-          <h2
-            style={{
-              color: "#00ff9d",
-              marginBottom: "25px",
-              textAlign: "center",
-              fontSize: "42px",
-            }}
-          >
-            Refund Policy
-          </h2>
-
-          <p
-            style={{
-              color: "#cfcfcf",
-              lineHeight: "35px",
-              fontSize: "18px",
-            }}
-          >
-            • Refund requests are reviewed carefully.
-            <br /><br />
-            • 7-10 working days it will take to refund your amount.
-            <br /><br />
-            • Fake claims or misuse may lead to rejection.
-            <br /><br />
-            • By purchasing our services you agree to our terms.
-          </p>
 
         </div>
 
       </section>
 
       {/* FOOTER */}
-
-      <footer
-        style={{
-          padding: "35px 20px",
-          borderTop: "1px solid #151515",
-          textAlign: "center",
-        }}
-      >
-
-        <h2
-          style={{
-            color: "#00ff9d",
-            marginBottom: "15px",
-          }}
-        >
-          TheSocialExpert
-        </h2>
-
-        <p
-          style={{
-            color: "#bdbdbd",
-            marginBottom: "20px",
-          }}
-        >
-          thesocialexpert2.1@gmail.com
-        </p>
-
-        <a
-          href="https://wa.me/918962007547"
-          target="_blank"
-          style={{
-            background: "#00ff9d",
-            color: "#000",
-            padding: "12px 24px",
-            borderRadius: "10px",
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
-        >
-          Contact On WhatsApp
-        </a>
-
-        <p
-          style={{
-            color: "#777",
-            marginTop: "30px",
-            fontSize: "14px",
-          }}
-        >
-          © 2026 TheSocialExpert. All Rights Reserved.
-        </p>
-
+      <footer className="text-center py-10 text-gray-500 border-t border-white/10">
+        © 2026 TheSocialExpert • All Rights Reserved
       </footer>
 
     </div>
   );
-}
+                     }
